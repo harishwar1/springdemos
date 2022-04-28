@@ -8,12 +8,18 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp"
-		class="com.springdemos.springcore.dibasic.Employee" >
+	<bean name="hos"
+		class="com.springdemos.springcore.list.Hospital" >
   
-      <property name="id" value="27"/> 
+      <property name="name" value="max"/> 
      
-      <property name="name" value="max"/>
+      <property name="department">
+      <list>
+      <value>fornt-office</value>
+      <value>in-patient</value>
+      <value>out-patient</value>
+      </list>
+      </property>
       
       
      </bean>
